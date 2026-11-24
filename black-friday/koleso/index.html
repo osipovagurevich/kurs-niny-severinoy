@@ -38,7 +38,8 @@
   footer{color:#a9a9b0;font-size:12px;margin-top:36px}
 
   .sub{color:#ffb21a;font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:.03em;margin-bottom:12px}
-  .list-title{font-size:24px;font-weight:800;margin:40px 0 16px;text-align:left}
+  .list-title{font-size:24px;font-weight:800;margin:8px 0 16px;text-align:left}
+  .prizes + .list-title{margin-top:36px;text-align:center}
   .prizes{display:grid;gap:10px;text-align:left}
   .prize{display:flex;justify-content:space-between;align-items:center;gap:14px;background:#2a2a2d;border:1px solid #3c3c41;border-radius:14px;padding:14px 16px}
   .prize .pn{font-weight:700;font-size:16px;line-height:1.35}
@@ -68,6 +69,9 @@
   <p class="lead" id="lead">Спасибо за покупку! Прокрутите колесо один раз и заберите подарок.</p>
 
   <div id="game">
+    <h2 class="list-title">Что можно выиграть</h2>
+    <div class="prizes" id="prizeList"></div>
+    <h2 class="list-title">Крутите колесо</h2>
     <div class="wheel-box">
       <div class="pointer"></div>
       <svg viewBox="0 0 400 400" id="wheelSvg" aria-hidden="true"><g id="wheelG"></g></svg>
@@ -75,8 +79,6 @@
     <button class="btn" id="spinBtn" type="button">Крутить колесо</button>
     <p class="note">Прокрутка одна. Подарок получает каждый.</p>
 
-    <h2 class="list-title">Что можно выиграть</h2>
-    <div class="prizes" id="prizeList"></div>
 
     <div class="result" id="result">
       <div class="r-label">Ваш подарок</div>
@@ -136,7 +138,6 @@
   var KEY = 'bf2026_wheel_prize';
   /* ===================== */
 
-  if (TEST_MODE){ var tf = document.createElement('div'); tf.className = 'test-flag'; tf.textContent = 'Тестовая версия'; document.body.appendChild(tf); }
   var N = PRIZES.length, SEG = 360/N, CX = 200, R = 192;
   var COLORS = ['#ffb21a','#2f2f33','#ffd27a'], TEXT = ['#1c1c1e','#f4f4f5','#1c1c1e'];
   var NS = 'http://www.w3.org/2000/svg';
