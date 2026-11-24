@@ -279,6 +279,9 @@
   .pop-price span{flex-basis:100%;font-size:13px;color:var(--muted)}
   .pop-x{position:absolute;top:8px;right:12px;background:none;border:none;color:var(--muted);font-size:28px;cursor:pointer;line-height:1}
   .modal-box .m-text{text-align:left}
+  .lead-in{color:var(--text)!important;font-size:16px!important;font-weight:500}
+  .gifts{background:rgba(255,178,26,.1);border:1px dashed var(--yolk);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--text);margin:-6px 0 18px;line-height:1.45}
+  .gifts b{color:var(--yolk)}
 </style>
 </head>
 <body>
@@ -305,7 +308,7 @@
     </div>
     <div class="hero-btns">
       <a class="btn" href="#main-offers">Программы и наставничество</a>
-      <a class="btn ghost" href="#online-offers">Онлайн-курсы и пакеты</a>
+      <a class="btn ghost" href="#online-offers">Онлайн-курсы и наборы</a>
     </div>
   </div>
 </header>
@@ -321,19 +324,16 @@
 
       <!-- Анатомия -->
       <div class="card">
-        <div class="tags"><div class="tag">−20%</div><div class="tag soft">2 подарка</div></div>
+        <div class="tags"><div class="tag">−20%</div><div class="tag soft">+ подарки</div></div>
         <h3>Онлайн-обучение «Функциональная, пальпаторная и диагностическая анатомия»</h3>
-        <div class="tariff"><b>Тариф с личным куратором</b><span>и доступом в чат с Ниной Севериной</span></div>
-        <div class="bonus">
-          <div class="b-row"><span class="b-name">Депозит на онлайн-курсы школы</span><span class="b-val">15 000 ₽</span></div>
-          <div class="b-row"><span class="b-name">Доступ к программе «3D-атлас человека» <span class="hl">на год</span></span><span class="b-val">1 800 ₽</span></div>
-          <div class="b-total"><small>Подарков на</small>16 800 ₽</div>
-        </div>
+        <p class="lead-in">Научитесь находить причину проблемы клиента: функциональная анатомия, пальпация и диагностика в одном курсе.</p>
+        <div class="tariff"><b>Полный курс: 6 модулей</b><span>с личным куратором, чатом и созвонами с Ниной Севериной</span></div>
         <div class="price">
           <span class="old">44 900 ₽</span>
           <span class="now">35 920 ₽</span>
           <span class="note">Можно оформить в рассрочку</span>
         </div>
+        <div class="gifts"><b>+ в подарок:</b> 15 000 ₽ на другие онлайн-курсы школы и доступ к 3D-атласу человека на год</div>
         <div class="btn-row">
           <a class="btn" href="#">Купить курс</a>
           <a class="btn-consult2" href="#">Проконсультироваться с куратором</a>
@@ -407,8 +407,8 @@
 
     </div>
 
-    <h2 id="online-offers" class="sec2">Онлайн-курсы<br>и пакеты</h2>
-    <p class="h2sub">Новые техники в своём темпе, из любого города</p>
+    <h2 id="online-offers" class="sec2">Онлайн-курсы<br>и наборы</h2>
+    <p class="h2sub">Отдельные курсы и наборы из нескольких курсов по одной теме со скидкой до 58%</p>
 
     <div class="grid mini">
 
@@ -440,7 +440,7 @@
 
       <div class="card sm">
         <div class="tags"><div class="tag">−46%</div></div>
-        <h3>Пакет «Сияющее лицо»</h3>
+        <h3>Набор курсов «Сияющее лицо»</h3>
         <ul class="pack"><li>Скульптурный массаж лица</li><li>Испанский массаж лица</li><li>Медовый массаж лица</li><li>Мастер-класс «Влияние внутренних органов и эмоций на состояние лица»</li></ul>
         <div class="price"><span class="old">18 500 ₽</span><span class="now">9 990 ₽</span></div>
         <div class="btn-row">
@@ -451,7 +451,7 @@
 
       <div class="card sm">
         <div class="tags"><div class="tag">−51%</div></div>
-        <h3>Пакет «Вернуть молодость лица»</h3>
+        <h3>Набор курсов «Вернуть молодость лица»</h3>
         <ul class="pack"><li>Мануальное моделирование лица</li><li>Асахи</li><li>Буккальный массаж лица</li><li>Мастер-класс «Топ-7 возрастных изменений + круги под глазами»</li><li>«Функциональная и пальпаторная анатомия мышц лица»</li></ul>
         <div class="price"><span class="old">26 480 ₽</span><span class="now">12 990 ₽</span></div>
         <div class="btn-row">
@@ -462,7 +462,7 @@
 
       <div class="card sm">
         <div class="tags"><div class="tag">−58%</div></div>
-        <h3>Пакет «Здоровое тело»</h3>
+        <h3>Набор курсов «Здоровое тело»</h3>
         <ul class="pack"><li>Массаж шейно-воротниковой зоны</li><li>Триггерные точки</li><li>Диагностика в статике</li><li>Диагностика в динамике</li><li>Мастер-класс [уточнить]</li></ul>
         <div class="price"><span class="old">31 000 ₽</span><span class="now">12 990 ₽</span></div>
         <div class="btn-row">
@@ -477,7 +477,7 @@
         <p>Скидка до 40% на все* онлайн-программы школы: техники массажа лица и тела, обучение по кинезиологии, интенсивы, мастер-классы и другие курсы.</p>
         <p>Выберите курс на сайте школы. Стоимость уже указана с учётом скидки.</p>
         <p class="foot-note">*Акция не распространяется на онлайн-курс «Функциональная, пальпаторная и диагностическая анатомия».</p>
-        <div class="btn-row"><a class="btn" href="https://severina-school.ru/">Выбрать курс</a><a class="btn-consult2" href="#">Проконсультироваться с куратором</a></div>
+        <div class="btn-row"><a class="btn" href="https://severina-school.ru/new/online">Выбрать курс</a><a class="btn-consult2" href="#">Проконсультироваться с куратором</a></div>
       </div>
 
     </div>
@@ -570,9 +570,8 @@
       <li>Эндокринная и лимфатическая системы</li>
       <li>Биохимическая коррекция</li>
       <li>Краниосакральная терапия</li>
-      <li>[12-й модуль уточнить]</li>
+      <li>Вегетативная нервная система и сколиозы</li>
     </ol>
-    <p class="m-text">Бонусные модули: система привлечения клиентов, вегетативная нервная система, сколиозы. [Входят ли в онлайн, уточнить]</p>
     <h4>Формат</h4>
     <ul class="pop-list">
       <li>Онлайн, все модули в записи</li>
